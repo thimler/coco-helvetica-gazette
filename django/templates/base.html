@@ -13,6 +13,7 @@
     {% compress css %}
         <link type="text/x-scss" href="{% static 'scss/style.scss' %}" rel="stylesheet" media="screen">
     {% endcompress %}
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0-RC3/css/bootstrap-datepicker.min.css">
 </head>
 
 <body>
@@ -20,6 +21,9 @@
     {% endblock %}
 
     {% block javascript %}
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0-RC3/js/bootstrap-datepicker.min.js"></script>
     {% endblock %}
 </body>
 </html>

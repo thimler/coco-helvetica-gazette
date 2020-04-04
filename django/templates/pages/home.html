@@ -1,19 +1,63 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}{{ block.super }} - Home{% endblock %}
 
 {% block content %}
-    <h1>Coco Helvetica Gazette</h1>
-
-    {% for testimonial in object_list %}
-        <p>{{ testimonial.text }}
-        {% for tag in testimonial.tags.all %}
-            <b><a href="{% url 'by_tag' tag.id %}">{{ tag }}</a> </b>
+    <div class="row">
+        <div class="col-4">
+            <div class="card-body">
+                <h1>Coco Helvetica Gazette</h1>
+            </div>
+        </div>
+        <div class="col-8">
+            <div id="filters">
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">#</div>
+                    </div>
+                    <select class="form-control">
+                        {% for tag in tags %}
+                            <option value="{{ tag.id }}">{{ tag.name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="input-group mb-2 mr-sm-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text"><img src="{% static 'icons/calendar.svg' %}"
+                                                           alt="calendar image">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control datepicker" placeholder="04.04.2020">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card-columns">
+        {% for testimonial in object_list %}
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">{{ testimonial.text }}</p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            {{ testimonial.creation_date }}, {{ testimonial.get_author_gender_display|default:"Un humain" }}, {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
+                        </small>
+                    </p>
+                    {% for tag in testimonial.tags.all %}
+                        <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
+                    {% endfor %} -- <a href="{% url 'article' testimonial.pk %}">Permalink</a>
+                    </p>
+                </div>
+            </div>
         {% endfor %}
-        -- {{ testimonial.creation_date }}, {{ testimonial.get_author_gender_display|default:"Un humain" }},
-        {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
-        <a href="{% url 'article' testimonial.pk %}">Permalink</a>
-        </p>
-    {% endfor %}
+    </div>
+
+
 {% endblock %}
 
+{% block javascript %}
+    {{ block.super }}
+    <script type="text/javascript">
+        $('.datepicker').datepicker();
+    </script>
+{% endblock %}
