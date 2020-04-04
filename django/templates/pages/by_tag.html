@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}{{ block.super }} - Home{% endblock %}
+
+{% block content %}
+    <h1>Coco Helvetica Gazette #{{ tag.name }}</h1>
+
+    {% for testimonial in object_list %}
+        <p>{{ testimonial.text }} 
+        {% for tag in testimonial.tags.all %}
+            <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
+        {% endfor %}
+        -- {{ testimonial.creation_date }}, {{ testimonial.get_author_gender_display|default:"Un humain" }},
+        {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
+        <a href="{% url 'article' testimonial.pk %}">Permalink</a>
+        </p>
+    {% endfor %}
+{% endblock %}
+

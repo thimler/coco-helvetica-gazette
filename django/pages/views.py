@@ -11,8 +11,12 @@ class ArticleView(DetailView):
     model = TextTestimonial
 
 class ByTagView(ListView):
-    # TODO: Faire un nouveau template by tag ?
-    template_name = 'pages/home.html'
+    template_name = 'pages/by_tag.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['tag'] = get_object_or_404(Tag, pk=self.kwargs['pk'])
+        return context
 
     def get_queryset(self):
         return TextTestimonial.objects.filter(tags__pk=self.kwargs['pk'])
