@@ -41,7 +41,9 @@ Then open this link in your browser to see the project in action [http://127.0.0
 
 ```
 docker build -t coco .
-docker run -it -v $(pwd):/app -p 8000:80 coco
+docker run -it -p 8000:80 coco
 ```
 
 Then open this link in your browser to see the project in action [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+Unfortunately, this breaks django live reload, so you have to kill and start the server process for your changes outside the container to take effect.
