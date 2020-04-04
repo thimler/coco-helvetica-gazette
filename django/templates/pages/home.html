@@ -6,9 +6,9 @@
     <h1>Coco Helvetica Gazette</h1>
 
     {% for testimonial in object_list %}
-        <p>{{ testimonial.text }} 
+        <p>{{ testimonial.text }}
         {% for tag in testimonial.tags.all %}
-            <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
+            <b><a href="{% url 'by_tag' tag.id %}">{{ tag }}</a> </b>
         {% endfor %}
         -- {{ testimonial.creation_date }}, {{ testimonial.get_author_gender_display|default:"Un humain" }},
         {{ testimonial.author_age|default:"Ni vieux ni jeune" }}

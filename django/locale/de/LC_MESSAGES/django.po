@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-04 20:20+0200\n"
+"POT-Creation-Date: 2020-04-04 23:23+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,102 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: pages/models.py:7
+msgid "Homme"
+msgstr "Mensch"
+
+#: pages/models.py:8
+msgid "Femme"
+msgstr "Frau"
+
+#: pages/models.py:9
+msgid "Autre"
+msgstr "Andere"
+
+#: pages/tags.py:4
+msgid "santé"
+msgstr "gesundheit"
+
+#: pages/tags.py:5
+msgid "alimentaire"
+msgstr "lebensmittel"
+
+#: pages/tags.py:6
+msgid "education"
+msgstr "bildung"
+
+#: pages/tags.py:7
+msgid "télétravail"
+msgstr "telearbeit"
+
+#: pages/tags.py:8
+msgid "sécurité et droit"
+msgstr "sicherheit"
+
+#: pages/tags.py:9
+msgid "transport"
+msgstr "verkehr"
+
+#: pages/tags.py:10
+msgid "tourisme"
+msgstr "tourismus"
+
+#: pages/tags.py:11
+msgid "informatique et multimédia"
+msgstr "computer"
+
+#: pages/tags.py:12
+msgid "sport"
+msgstr "sport"
+
+#: pages/tags.py:13
+msgid "musique"
+msgstr "musik"
+
+#: pages/tags.py:14
+msgid "cinéma"
+msgstr "kino"
+
+#: pages/tags.py:15
+msgid "voyage"
+msgstr "reisen"
+
+#: pages/tags.py:16
+msgid "culture"
+msgstr "kultur"
+
+#: pages/tags.py:17
+msgid "cuisine"
+msgstr "küche"
+
+#: pages/tags.py:18
+msgid "nature & environnement"
+msgstr "natur & umwelt"
+
+#: pages/tags.py:19
+msgid "psychologie"
+msgstr "psychologie"
+
+#: pages/tags.py:20
+msgid "positivité"
+msgstr "positivität"
+
+#: pages/tags.py:21
+msgid "motivation"
+msgstr "motivation"
+
+#: pages/tags.py:22
+msgid "humour"
+msgstr "humor"
+
+#: pages/tags.py:23
+msgid "récits"
+msgstr "geschichten"
+
+#: pages/tags.py:24
+msgid "arts"
+msgstr "kunst"
 
 #: templates/pages/by_tag.html:14
 msgid "Un humain"

@@ -1,17 +1,21 @@
 from django.db import models
+from django.utils.translation import ugettext_lazy as _
+from .tags import ALLOWED_TAGS
+
 
 GENDERS = [
-    ("M", "Homme"),
-    ("F", "Femme"),
-    ("O", "Autre"),
+    ('M', _('Homme')),
+    ('F', _('Femme')),
+    ('O', _('Autre')),
 ]
 
 
 class Tag(models.Model):
-    name = models.CharField(max_length=200)
+    name = models.CharField(max_length=200, choices=ALLOWED_TAGS)
 
     def __str__(self):
-        return "#" + self.name
+        return "#" + self.get_name_display()
+
 
 
 class TextTestimonial(models.Model):

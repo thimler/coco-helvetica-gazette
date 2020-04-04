@@ -1,0 +1,25 @@
+from django.utils.translation import gettext_lazy as _
+
+ALLOWED_TAGS = [
+    ("santé", _("santé")),
+    ("alimentaire", _("alimentaire")),
+    ("education", _("education")),
+    ("télétravail", _("télétravail")),
+    ("sécurité et droit", _("sécurité et droit")),
+    ("transport", _("transport")),
+    ("tourisme", _("tourisme")),
+    ("informatique et multimédia", _("informatique et multimédia")),
+    ("sport", _("sport")),
+    ("musique", _("musique")),
+    ("cinéma", _("cinéma")),
+    ("voyage", _("voyage")),
+    ("culture", _("culture")),
+    ("cuisine", _("cuisine")),
+    ("nature & environnement", _("nature & environnement")),
+    ("psychologie", _("psychologie")),
+    ("positivité", _("positivité")),
+    ("motivation", _("motivation")),
+    ("humour", _("humour")),
+    ("récits", _("récits")),
+    ("arts", _("arts")),
+]
