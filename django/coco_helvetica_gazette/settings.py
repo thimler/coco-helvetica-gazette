@@ -25,7 +25,8 @@ SECRET_KEY = 'b_5_6=(pb!vaecdol=x0kjx)hoh==fcfq39%%_v@j2y)uf%j%6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# WARNING: This is the dev instance
+ALLOWED_HOSTS = ['coco.antoinealb.net']
 
 
 # Application definition
