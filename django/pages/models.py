@@ -10,3 +10,6 @@ class TextTestimonial(models.Model):
     text = models.TextField()
     creation_date = models.DateField(auto_now_add=True)
     tags = models.ManyToManyField(Tag)
+
+    def __str__(self):
+        return '"' + " ".join(self.text.split()[:5]) + '"'
