@@ -27,6 +27,10 @@ Go into your virtual environment
 
     pipenv shell
     
+Run the migrations
+
+    python manage.py migrate
+    
 Run the python dev server
 
     python manage.py runserver
