@@ -12,12 +12,16 @@ RUN cd /app && \
     pipenv lock --requirements > requirements.txt && \
     pip install -r requirements.txt
 
-COPY . /app
-
 WORKDIR /app
 
-RUN django-admin compilemessages
+COPY yarn.lock /app
+COPY package.json /app
 RUN npm run yarn-install
+
+COPY locale /app/locale
+RUN django-admin compilemessages
+
+COPY . /app
 
 # TODO: Switch this to a real server like Gunicorn + Nginx for static files
 CMD python3 manage.py runserver 0.0.0.0:80
