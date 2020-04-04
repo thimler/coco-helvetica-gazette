@@ -4,9 +4,9 @@ from .tags import ALLOWED_TAGS
 
 
 GENDERS = [
-    ('M', _('Homme')),
-    ('F', _('Femme')),
-    ('O', _('Autre')),
+    ("M", _("Homme")),
+    ("F", _("Femme")),
+    ("O", _("Autre")),
 ]
 
 
@@ -15,7 +15,6 @@ class Tag(models.Model):
 
     def __str__(self):
         return "#" + self.get_name_display()
-
 
 
 class TextTestimonial(models.Model):
