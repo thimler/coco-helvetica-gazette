@@ -10,7 +10,8 @@
         {% for tag in testimonial.tags.all %}
             <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
         {% endfor %}
-        -- {{ testimonial.creation_date }}
+        -- {{ testimonial.creation_date }}, {{ testimonial.get_author_gender_display|default:"Un humain" }},
+        {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
     {% endfor %}
 {% endblock %}
 
