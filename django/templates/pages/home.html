@@ -6,7 +6,11 @@
     <h1>Coco Helvetica Gazette</h1>
 
     {% for testimonial in object_list %}
-        <p>{{ testimonial.text }} -- {{ testimonial.creation_date }}</p>
+        <p>{{ testimonial.text }} 
+        {% for tag in testimonial.tags.all %}
+            <b>#{{ tag.name }} </b>
+        {% endfor %}
+        -- {{ testimonial.creation_date }}
     {% endfor %}
 {% endblock %}
 
