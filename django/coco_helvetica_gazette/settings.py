@@ -75,10 +75,15 @@ WSGI_APPLICATION = 'coco_helvetica_gazette.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+try:
+    db_name = os.environ['DJANGO_DB']
+except KeyError:
+    db_name = os.path.join(BASE_DIR, 'db.sqlite3')
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': db_name
     }
 }
 
