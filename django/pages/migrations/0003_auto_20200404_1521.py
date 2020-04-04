@@ -6,18 +6,23 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pages', '0002_auto_20200404_1440'),
+        ("pages", "0002_auto_20200404_1440"),
     ]
 
     operations = [
         migrations.AddField(
-            model_name='texttestimonial',
-            name='author_age',
+            model_name="texttestimonial",
+            name="author_age",
             field=models.IntegerField(blank=True, null=True),
         ),
         migrations.AddField(
-            model_name='texttestimonial',
-            name='author_gender',
-            field=models.CharField(blank=True, choices=[('M', 'Homme'), ('F', 'Femme'), ('O', 'Autre')], max_length=1, null=True),
+            model_name="texttestimonial",
+            name="author_gender",
+            field=models.CharField(
+                blank=True,
+                choices=[("M", "Homme"), ("F", "Femme"), ("O", "Autre")],
+                max_length=1,
+                null=True,
+            ),
         ),
     ]

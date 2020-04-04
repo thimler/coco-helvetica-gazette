@@ -27,7 +27,7 @@ Arts
 
 
 class Command(BaseCommand):
-    help = 'Creates a set of predefined hashtags'
+    help = "Creates a set of predefined hashtags"
 
     def handle(self, *args, **options):
         self.stdout.write("creatings tags:\n")
