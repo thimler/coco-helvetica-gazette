@@ -129,10 +129,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 LOCALE_PATHS = [os.path.join(BASE_DIR, "locale")]
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 STATICFILES_FINDERS = [
-    'compressor.finders.CompressorFinder'
+    'compressor.finders.CompressorFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder'
 ]
 
 COMPRESS_PRECOMPILERS = (
