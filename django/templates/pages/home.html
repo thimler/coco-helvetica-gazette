@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load i18n %}
 
 {% block title %}{{ block.super }} - Home{% endblock %}
 
@@ -18,7 +19,7 @@
                     </div>
                     <select class="form-control">
                         {% for tag in tags %}
-                            <option value="{{ tag.id }}">{{ tag.name }}</option>
+                            <option value="{{ tag.id }}">{{ tag }}</option>
                         {% endfor %}
                     </select>
                 </div>
@@ -44,7 +45,7 @@
                         </small>
                     </p>
                     {% for tag in testimonial.tags.all %}
-                        <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
+                        <b><a href="{% url 'by_tag' tag.id %}">#{{ tag }}</a> </b>
                     {% endfor %} -- <a href="{% url 'article' testimonial.pk %}">Permalink</a>
                     </p>
                 </div>
