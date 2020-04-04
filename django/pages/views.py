@@ -1,10 +1,13 @@
 from django.shortcuts import get_object_or_404
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import TextTestimonial, Tag
 
 
 class HomePageView(ListView):
     template_name = 'pages/home.html'
+    model = TextTestimonial
+
+class ArticleView(DetailView):
     model = TextTestimonial
 
 class ByTagView(ListView):

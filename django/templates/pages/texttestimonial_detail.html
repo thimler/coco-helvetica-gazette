@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{{ object.text }} 
+        {% for tag in object.tags.all %}
+            <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
+        {% endfor %}
+        -- {{ object.creation_date }}, {{ object.get_author_gender_display|default:"Un humain" }},
+        {{ object.author_age|default:"Ni vieux ni jeune" }}
+{% endblock %}
+

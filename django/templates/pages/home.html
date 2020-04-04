@@ -12,6 +12,8 @@
         {% endfor %}
         -- {{ testimonial.creation_date }}, {{ testimonial.get_author_gender_display|default:"Un humain" }},
         {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
+        <a href="{% url 'article' testimonial.pk %}">Permalink</a>
+        </p>
     {% endfor %}
 {% endblock %}
 
