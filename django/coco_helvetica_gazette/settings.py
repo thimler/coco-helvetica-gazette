@@ -26,7 +26,8 @@ SECRET_KEY = 'b_5_6=(pb!vaecdol=x0kjx)hoh==fcfq39%%_v@j2y)uf%j%6'
 DEBUG = True
 
 # WARNING: This is the dev instance
-ALLOWED_HOSTS = ['coco.antoinealb.net']
+DEV_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+ALLOWED_HOSTS = ['coco.antoinealb.net'] + DEV_HOSTS
 
 
 # Application definition
