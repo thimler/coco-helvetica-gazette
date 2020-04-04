@@ -26,13 +26,22 @@ Install python dependencies
 Go into your virtual environment
 
     pipenv shell
-    
+
 Run the migrations
 
     python manage.py migrate
-    
+
 Run the python dev server
 
     python manage.py runserver
-    
+
+Then open this link in your browser to see the project in action [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+## Running with Docker
+
+```
+docker build -t coco .
+docker run -it -v $(pwd):/app -p 8000:80 coco
+```
+
 Then open this link in your browser to see the project in action [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
