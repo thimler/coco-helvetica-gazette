@@ -8,7 +8,7 @@
     {% for testimonial in object_list %}
         <p>{{ testimonial.text }} 
         {% for tag in testimonial.tags.all %}
-            <b>#{{ tag.name }} </b>
+            <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
         {% endfor %}
         -- {{ testimonial.creation_date }}
     {% endfor %}
