@@ -96,5 +96,9 @@
     {{ block.super }}
     <script type="text/javascript">
         $('.datepicker').datepicker();
+        $('.datepicker').on("changeDate", function(ev){
+            console.log(ev.date.toISOString());
+            window.location.href="{% url 'home' %}?date=" + ev.date.toISOString().substr(0,10);
+        });
     </script>
 {% endblock %}
