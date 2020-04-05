@@ -108,6 +108,7 @@ LANGUAGES = [
     ("de", _("German")),
     ("fr", _("French")),
     ("it", _("Italian")),
+    ("en", _("English")),
 ]
 
 LANGUAGE_CODE = "fr"

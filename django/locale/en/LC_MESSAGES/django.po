@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-05 14:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: coco_helvetica_gazette/settings.py:108
+msgid "German"
+msgstr ""
+
+#: coco_helvetica_gazette/settings.py:109
+msgid "French"
+msgstr ""
+
+#: coco_helvetica_gazette/settings.py:110
+msgid "Italian"
+msgstr ""
+
+#: pages/models.py:9
+msgid "Autre"
+msgstr ""
+
+#: pages/models.py:10
+msgid "Homme"
+msgstr ""
+
+#: pages/models.py:11
+msgid "Femme"
+msgstr ""
+
+#: pages/tags.py:4
+msgid "personnel santé"
+msgstr ""
+
+#: pages/tags.py:5
+msgid "alimentaire"
+msgstr ""
+
+#: pages/tags.py:6
+msgid "éducation"
+msgstr ""
+
+#: pages/tags.py:7
+msgid "télétravail"
+msgstr ""
+
+#: pages/tags.py:8
+msgid "sécurité"
+msgstr ""
+
+#: pages/tags.py:9
+msgid "transport"
+msgstr ""
+
+#: pages/tags.py:10
+msgid "étudiant"
+msgstr ""
+
+#: pages/tags.py:11
+msgid "sport"
+msgstr ""
+
+#: pages/tags.py:12
+msgid "voyage"
+msgstr ""
+
+#: pages/tags.py:13
+msgid "art & culture"
+msgstr ""
+
+#: pages/tags.py:14
+msgid "cuisine"
+msgstr ""
+
+#: pages/tags.py:15
+msgid "nature & environnement"
+msgstr ""
+
+#: pages/tags.py:16
+msgid "famille"
+msgstr ""
+
+#: pages/tags.py:17
+msgid "amitié"
+msgstr ""
+
+#: pages/tags.py:18
+msgid "amour"
+msgstr ""
+
+#: pages/tags.py:19
+msgid "solitude"
+msgstr ""
+
+#: pages/tags.py:20
+msgid "confinement"
+msgstr ""
+
+#: pages/tags.py:21
+msgid "positivité"
+msgstr ""
+
+#: pages/tags.py:22
+msgid "motivation"
+msgstr ""
+
+#: pages/tags.py:23
+msgid "humour"
+msgstr ""
+
+#: pages/tags.py:24
+msgid "actualités"
+msgstr ""
+
+#: pages/tags.py:25
+msgid "covid+"
+msgstr ""
+
+#: templates/pages/home.html:65
+msgid "Moi, pendant le confinement..."
+msgstr ""
+
+#: templates/pages/home.html:71
+msgid "J'écris la gazette!"
+msgstr ""
+
+#: templates/pages/home.html:74
+msgid "Je suis..."
+msgstr ""
+
+#: templates/pages/home.html:83
+msgid "Mon âge:"
+msgstr ""
+
+#: templates/pages/home.html:86
+msgid "J'envoie!"
+msgstr ""
