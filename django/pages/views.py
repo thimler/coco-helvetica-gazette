@@ -7,7 +7,7 @@ from django.forms import modelform_factory
 class HomePageView(ListView):
     template_name = "pages/home.html"
     model = TextTestimonial
-    fields = ("text", "tags", "author_age", "author_gender")
+    fields = ("text",)
     ArticleCreate = modelform_factory(TextTestimonial, fields=fields)
 
     def get_context_data(self, **kwargs):
@@ -33,7 +33,7 @@ class ByTagView(ListView):
         return TextTestimonial.objects.filter(tags__pk=self.kwargs["pk"])
 
 def manage_articles(request):
-    fields = ("text", "tags", "author_age", "author_gender")
+    fields = ("text",)
     ArticleCreate = modelform_factory(TextTestimonial, fields=fields)
     if request.method == 'POST':
         form = ArticleCreate(request.POST, request.FILES)

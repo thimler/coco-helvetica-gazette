@@ -15,7 +15,7 @@ class Tag(models.Model):
     name = models.CharField(max_length=200, choices=ALLOWED_TAGS)
 
     def __str__(self):
-        return "#" + self.get_name_display()
+        return self.get_name_display()
 
 
 class TextTestimonial(models.Model):
