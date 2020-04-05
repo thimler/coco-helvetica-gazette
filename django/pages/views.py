@@ -18,6 +18,12 @@ class HomePageView(ListView):
         context["ArticleCreate"] = ArticleCreate
         return context
 
+    def get_queryset(self):
+        filter_val = self.request.GET.get("date")
+        if not filter_val:
+            return self.model.objects.all()
+        else:
+            return self.model.objects.filter(creation_date=filter_val)
 
 class ArticleView(DetailView):
     model = TextTestimonial
