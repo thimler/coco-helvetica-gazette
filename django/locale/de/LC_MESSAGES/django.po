@@ -136,11 +136,11 @@ msgstr "Ich bin..."
 
 #: templates/pages/home.html:83
 msgid "Mon âge:"
-msgstr "Mein Alter"
+msgstr "Mein Alter:"
 
 #: templates/pages/home.html:86
 msgid "J'envoie!"
-msgstr "Ich sende!"
+msgstr "Ich sende"
 
 #~ msgid "santé"
 #~ msgstr "gesundheit"
