@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
 {% load i18n %}
+{% load l10n %}
 
 {% block title %}{{ block.super }} - {% if tag %}{{ tag.name }}{% else %}Home{% endif %}{% endblock %}
 
@@ -45,7 +46,7 @@
                     <p class="card-text">{{ testimonial.text }}</p>
                     <small class="text-muted">
                         <p class="card-text">
-                        {{ testimonial.creation_date }}, {{ testimonial.get_author_gender_display|default:"Un humain" }}, {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
+                        {{ testimonial.creation_date|localize }}, {{ testimonial.get_author_gender_display|default:"Un humain" }}, {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
                         {% for tag in testimonial.tags.all %}
                             <b><a href="{% url 'by_tag' tag.id %}">#{{ tag }}</a> </b>
                         {% endfor %} -- <a href="{% url 'article' testimonial.pk %}">Permalink</a>
