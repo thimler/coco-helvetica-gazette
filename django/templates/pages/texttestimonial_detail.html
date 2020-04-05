@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
+{% block title %}{{ block.super }} - {{ object }}{% endblock %}
+
 {% block content %}
-{{ object.text }} 
+{{ object.text }}
         {% for tag in object.tags.all %}
             <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
         {% endfor %}

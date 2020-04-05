@@ -2,7 +2,7 @@
 {% load static %}
 {% load i18n %}
 
-{% block title %}{{ block.super }} - Home{% endblock %}
+{% block title %}{{ block.super }} - {% if tag %}{{ tag.name }}{% else %}Home{% endif %}{% endblock %}
 
 {% block content %}
     <div class="row">
