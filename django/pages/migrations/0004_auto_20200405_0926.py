@@ -6,18 +6,50 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('pages', '0003_auto_20200404_1521'),
+        ("pages", "0003_auto_20200404_1521"),
     ]
 
     operations = [
         migrations.AlterField(
-            model_name='tag',
-            name='name',
-            field=models.CharField(choices=[('personnel santé', 'personnel santé'), ('alimentaire', 'alimentaire'), ('éducation', 'éducation'), ('télétravail', 'télétravail'), ('sécurité', 'sécurité'), ('transport', 'transport'), ('étudiant', 'étudiant'), ('sport', 'sport'), ('voyage', 'voyage'), ('art & culture', 'art & culture'), ('cuisine', 'cuisine'), ('nature & environnement', 'nature & environnement'), ('famille', 'famille'), ('amitié', 'amitié'), ('amour', 'amour'), ('solitude', 'solitude'), ('confinement', 'confinement'), ('positivité', 'positivité'), ('motivation', 'motivation'), ('humour', 'humour'), ('actualités', 'actualités'), ('covid+', 'covid+')], max_length=200),
+            model_name="tag",
+            name="name",
+            field=models.CharField(
+                choices=[
+                    ("personnel santé", "personnel santé"),
+                    ("alimentaire", "alimentaire"),
+                    ("éducation", "éducation"),
+                    ("télétravail", "télétravail"),
+                    ("sécurité", "sécurité"),
+                    ("transport", "transport"),
+                    ("étudiant", "étudiant"),
+                    ("sport", "sport"),
+                    ("voyage", "voyage"),
+                    ("art & culture", "art & culture"),
+                    ("cuisine", "cuisine"),
+                    ("nature & environnement", "nature & environnement"),
+                    ("famille", "famille"),
+                    ("amitié", "amitié"),
+                    ("amour", "amour"),
+                    ("solitude", "solitude"),
+                    ("confinement", "confinement"),
+                    ("positivité", "positivité"),
+                    ("motivation", "motivation"),
+                    ("humour", "humour"),
+                    ("actualités", "actualités"),
+                    ("covid+", "covid+"),
+                ],
+                max_length=200,
+            ),
         ),
         migrations.AlterField(
-            model_name='texttestimonial',
-            name='author_gender',
-            field=models.CharField(blank=True, choices=[('O', 'Autre'), ('M', 'Homme'), ('F', 'Femme')], default='O', max_length=1, null=True),
+            model_name="texttestimonial",
+            name="author_gender",
+            field=models.CharField(
+                blank=True,
+                choices=[("O", "Autre"), ("M", "Homme"), ("F", "Femme")],
+                default="O",
+                max_length=1,
+                null=True,
+            ),
         ),
     ]
