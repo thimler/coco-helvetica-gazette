@@ -51,8 +51,6 @@ msgid "Alimentaire"
 msgstr "Lebensmittel"
 
 #: pages/tags.py:6
-#, fuzzy
-#| msgid "Education"
 msgid "Education"
 msgstr "Bildung"
 
@@ -61,8 +59,6 @@ msgid "Télétravail"
 msgstr "Telearbeit"
 
 #: pages/tags.py:8
-#, fuzzy
-#| msgid "Sécurité"
 msgid "Sécurité"
 msgstr "Sicherheit"
 
@@ -83,8 +79,6 @@ msgid "Voyage"
 msgstr "Reise"
 
 #: pages/tags.py:13
-#, fuzzy
-#| msgid "Culture"
 msgid "Art & Culture"
 msgstr "Kunst & Kultur"
 
@@ -105,8 +99,6 @@ msgid "Amitié"
 msgstr "Freundshaft"
 
 #: pages/tags.py:18
-#, fuzzy
-#| msgid "Amour"
 msgid "Amour"
 msgstr "Liebe"
 
@@ -127,8 +119,8 @@ msgid "Actualités"
 msgstr "Nachrichten"
 
 #: pages/tags.py:23
-msgid "Covid+"
-msgstr "Covid+"
+msgid "CovidPositif"
+msgstr "CovidPositiv"
 
 #: templates/pages/home.html:65
 msgid "Moi, pendant le confinement..."
