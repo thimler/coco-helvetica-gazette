@@ -1,6 +1,7 @@
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from .tags import ALLOWED_TAGS
+from django.urls import reverse
 
 
 GENDERS = [
@@ -28,3 +29,6 @@ class TextTestimonial(models.Model):
 
     def __str__(self):
         return '"' + " ".join(self.text.split()[:5]) + '"'
+
+    def get_absolute_url(self):
+        return reverse("article", kwargs={"pk": self.pk})

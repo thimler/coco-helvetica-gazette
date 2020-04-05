@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404
+from django.shortcuts import get_object_or_404, render
 from django.views.generic import ListView, DetailView
 from .models import TextTestimonial, Tag
 from django.forms import modelform_factory
@@ -31,4 +31,14 @@ class ByTagView(ListView):
 
     def get_queryset(self):
         return TextTestimonial.objects.filter(tags__pk=self.kwargs["pk"])
+
+def manage_articles(request):
+    fields = ("text", "tags", "author_age", "author_gender")
+    ArticleCreate = modelform_factory(TextTestimonial, fields=fields)
+    if request.method == 'POST':
+        form = ArticleCreate(request.POST, request.FILES)
+        form.save()
+    else:
+        form = ArticleCreate()
+    return render(request, 'pages/home.html')
 
