@@ -32,13 +32,13 @@ class ByTagView(ListView):
     def get_queryset(self):
         return TextTestimonial.objects.filter(tags__pk=self.kwargs["pk"])
 
+
 def manage_articles(request):
     fields = ("text",)
     ArticleCreate = modelform_factory(TextTestimonial, fields=fields)
-    if request.method == 'POST':
+    if request.method == "POST":
         form = ArticleCreate(request.POST, request.FILES)
         form.save()
     else:
         form = ArticleCreate()
-    return render(request, 'pages/home.html')
-
+    return render(request, "pages/home.html")
