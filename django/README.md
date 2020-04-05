@@ -8,9 +8,31 @@ Django 3 project running on python 3.8 with Pipenv
 - pip3
 - pipenv
 
+
 See [this documentation](https://pipenv-fork.readthedocs.io/en/latest/install.html) to install pipenv
 
-## Setup your project
+OR:
+
+Docker
+
+## Running with Docker
+
+```
+docker build -t coco .
+docker run -it -p 8000:80 --name coco coco
+```
+
+To run the migrations:
+
+```
+docker exec -it coco python manage.py migrate
+```
+
+Then open this link in your browser to see the project in action [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+Unfortunately, this breaks django live reload, so you have to kill and start the server process for your changes outside the container to take effect.
+
+## Setup your project without Docker (not working at the moment!)
 Clone the repository
 
     git@github.com:antoinealb/coco-helvetica-gazette.git
@@ -37,13 +59,3 @@ Run the python dev server
 
 Then open this link in your browser to see the project in action [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-## Running with Docker
-
-```
-docker build -t coco .
-docker run -it -p 8000:80 coco
-```
-
-Then open this link in your browser to see the project in action [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-
-Unfortunately, this breaks django live reload, so you have to kill and start the server process for your changes outside the container to take effect.
