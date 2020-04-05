@@ -40,26 +40,6 @@
         </div>
     </div>
     <div class="card-columns">
-        {% for testimonial in object_list %}
-            <div class="card {{ testimonial.color }}">
-                <div class="card-body">
-                    <p class="card-text">{{ testimonial.text }}</p>
-                    <small class="text-muted">
-                        <p class="card-text">
-                        {{ testimonial.creation_date|localize }}, {{ testimonial.get_author_gender_display|default:"Un humain" }}, {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
-                        {% for tag in testimonial.tags.all %}
-                            <b><a href="{% url 'by_tag' tag.id %}">#{{ tag }}</a> </b>
-                        {% endfor %} -- <a href="{% url 'article' testimonial.pk %}">Permalink</a>
-                        </p>
-                    </small>
-                    </p>
-                </div>
-            </div>
-        {% endfor %}
-
-    </div>
-
-    <div id="new-post" class="col-sm-4">
         <div class="card bg-light mr-sm-1 mb-5">
             <div class="card-body">
                 <p class="card-text">{% trans "Moi, pendant le confinement..." %}</p>
@@ -91,6 +71,23 @@
                 </p>
             </div>
         </div>
+        {% for testimonial in object_list %}
+            <div class="card {{ testimonial.color }}">
+                <div class="card-body">
+                    <p class="card-text">{{ testimonial.text }}</p>
+                    <small class="text-muted">
+                        <p class="card-text">
+                        {{ testimonial.creation_date|localize }}, {{ testimonial.get_author_gender_display|default:"Un humain" }}, {{ testimonial.author_age|default:"Ni vieux ni jeune" }}
+                        {% for tag in testimonial.tags.all %}
+                            <b><a href="{% url 'by_tag' tag.id %}">#{{ tag }}</a> </b>
+                        {% endfor %} -- <a href="{% url 'article' testimonial.pk %}">Permalink</a>
+                        </p>
+                    </small>
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
+
     </div>
 {% endblock %}
 
