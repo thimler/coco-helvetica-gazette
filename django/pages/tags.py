@@ -17,7 +17,7 @@ ALLOWED_TAGS = [
     ("amitié", _("amitié")),
     ("amour", _("amour")),
     ("solitude", _("solitude")),
-    ("confinement", _("confinement")),    
+    ("confinement", _("confinement")),
     ("positivité", _("positivité")),
     ("motivation", _("motivation")),
     ("humour", _("humour")),

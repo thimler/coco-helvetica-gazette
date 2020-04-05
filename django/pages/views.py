@@ -3,9 +3,10 @@ from django.views.generic import ListView, DetailView
 from .models import TextTestimonial, Tag
 from django.forms import modelform_factory
 
-ArticleCreate = modelform_factory(TextTestimonial, fields=[
-    "text", "author_gender", "author_age"
-    ])
+ArticleCreate = modelform_factory(
+    TextTestimonial, fields=["text", "author_gender", "author_age"]
+)
+
 
 class HomePageView(ListView):
     template_name = "pages/home.html"
