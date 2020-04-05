@@ -32,120 +32,112 @@ msgstr ""
 
 #: pages/models.py:9
 msgid "Autre"
-msgstr ""
+msgstr "Other"
 
 #: pages/models.py:10
 msgid "Homme"
-msgstr ""
+msgstr "Man"
 
 #: pages/models.py:11
 msgid "Femme"
-msgstr ""
+msgstr "Woman"
 
 #: pages/tags.py:4
-msgid "personnel santé"
-msgstr ""
+msgid "Personnel Santé"
+msgstr "Health Workers"
 
 #: pages/tags.py:5
-msgid "alimentaire"
-msgstr ""
+msgid "Alimentaire"
+msgstr "Food Industry"
 
 #: pages/tags.py:6
-msgid "éducation"
-msgstr ""
+msgid "Education"
+msgstr "Education"
 
 #: pages/tags.py:7
 msgid "télétravail"
 msgstr ""
 
 #: pages/tags.py:8
-msgid "sécurité"
-msgstr ""
+msgid "Sécurité"
+msgstr "Security"
 
 #: pages/tags.py:9
-msgid "transport"
-msgstr ""
+msgid "Transport"
+msgstr "Transport"
 
 #: pages/tags.py:10
-msgid "étudiant"
-msgstr ""
+msgid "Etudiant"
+msgstr "Student"
 
 #: pages/tags.py:11
-msgid "sport"
-msgstr ""
+msgid "Sport"
+msgstr "Sport"
 
 #: pages/tags.py:12
-msgid "voyage"
-msgstr ""
+msgid "Voyage"
+msgstr "Travel"
 
 #: pages/tags.py:13
-msgid "art & culture"
-msgstr ""
+msgid "Arts & Culture"
+msgstr "Arts & Culture"
 
 #: pages/tags.py:14
-msgid "cuisine"
-msgstr ""
+msgid "Cuisine"
+msgstr "Cooking"
 
 #: pages/tags.py:15
-msgid "nature & environnement"
-msgstr ""
+msgid "Nature & Environnement"
+msgstr "Nature & Environnement"
 
 #: pages/tags.py:16
-msgid "famille"
-msgstr ""
+msgid "Famille"
+msgstr "Family"
 
 #: pages/tags.py:17
-msgid "amitié"
-msgstr ""
+msgid "Amitié"
+msgstr "Friendship"
 
 #: pages/tags.py:18
-msgid "amour"
-msgstr ""
+msgid "Amour"
+msgstr "Love"
 
 #: pages/tags.py:19
-msgid "solitude"
-msgstr ""
+msgid "Confinement"
+msgstr "Containment"
 
 #: pages/tags.py:20
-msgid "confinement"
-msgstr ""
+msgid "Motivation"
+msgstr "Motivation"
 
 #: pages/tags.py:21
-msgid "positivité"
-msgstr ""
+msgid "Humour"
+msgstr "Humor"
 
 #: pages/tags.py:22
-msgid "motivation"
-msgstr ""
+msgid "Actualités"
+msgstr "Actuality"
 
 #: pages/tags.py:23
-msgid "humour"
-msgstr ""
-
-#: pages/tags.py:24
-msgid "actualités"
-msgstr ""
-
-#: pages/tags.py:25
-msgid "covid+"
-msgstr ""
+msgid "Covid Positif"
+msgstr "Covid Positive"
 
 #: templates/pages/home.html:65
-msgid "Moi, pendant le confinement..."
-msgstr ""
+msgid "Me, pendant le confinement..."
+msgstr "Me, during containment..."
 
 #: templates/pages/home.html:71
 msgid "J'écris la gazette!"
-msgstr ""
+msgstr "I write the gazette"
 
 #: templates/pages/home.html:74
 msgid "Je suis..."
-msgstr ""
+msgstr "I am..."
 
 #: templates/pages/home.html:83
 msgid "Mon âge:"
-msgstr ""
+msgstr "My age:"
 
 #: templates/pages/home.html:86
 msgid "J'envoie!"
-msgstr ""
+msgstr "Send!"
