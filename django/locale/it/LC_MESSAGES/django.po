@@ -32,15 +32,15 @@ msgstr ""
 
 #: pages/models.py:9
 msgid "Autre"
-msgstr "Andere"
+msgstr ""
 
 #: pages/models.py:10
 msgid "Homme"
-msgstr "Mensch"
+msgstr ""
 
 #: pages/models.py:11
 msgid "Femme"
-msgstr "Frau"
+msgstr ""
 
 #: pages/tags.py:4
 msgid "personnel santé"
@@ -48,27 +48,23 @@ msgstr ""
 
 #: pages/tags.py:5
 msgid "alimentaire"
-msgstr "lebensmittel"
+msgstr ""
 
 #: pages/tags.py:6
-#, fuzzy
-#| msgid "education"
 msgid "éducation"
-msgstr "bildung"
+msgstr ""
 
 #: pages/tags.py:7
 msgid "télétravail"
-msgstr "telearbeit"
+msgstr ""
 
 #: pages/tags.py:8
-#, fuzzy
-#| msgid "sécurité et droit"
 msgid "sécurité"
-msgstr "sicherheit"
+msgstr ""
 
 #: pages/tags.py:9
 msgid "transport"
-msgstr "verkehr"
+msgstr ""
 
 #: pages/tags.py:10
 msgid "étudiant"
@@ -76,25 +72,23 @@ msgstr ""
 
 #: pages/tags.py:11
 msgid "sport"
-msgstr "sport"
+msgstr ""
 
 #: pages/tags.py:12
 msgid "voyage"
-msgstr "reisen"
+msgstr ""
 
 #: pages/tags.py:13
-#, fuzzy
-#| msgid "culture"
 msgid "art & culture"
-msgstr "kultur"
+msgstr ""
 
 #: pages/tags.py:14
 msgid "cuisine"
-msgstr "küche"
+msgstr ""
 
 #: pages/tags.py:15
 msgid "nature & environnement"
-msgstr "natur & umwelt"
+msgstr ""
 
 #: pages/tags.py:16
 msgid "famille"
@@ -105,10 +99,8 @@ msgid "amitié"
 msgstr ""
 
 #: pages/tags.py:18
-#, fuzzy
-#| msgid "humour"
 msgid "amour"
-msgstr "humor"
+msgstr ""
 
 #: pages/tags.py:19
 msgid "solitude"
@@ -120,15 +112,15 @@ msgstr ""
 
 #: pages/tags.py:21
 msgid "positivité"
-msgstr "positivität"
+msgstr ""
 
 #: pages/tags.py:22
 msgid "motivation"
-msgstr "motivation"
+msgstr ""
 
 #: pages/tags.py:23
 msgid "humour"
-msgstr "humor"
+msgstr ""
 
 #: pages/tags.py:24
 msgid "actualités"
@@ -157,33 +149,3 @@ msgstr ""
 #: templates/pages/home.html:86
 msgid "J'envoie!"
 msgstr ""
-
-#~ msgid "santé"
-#~ msgstr "gesundheit"
-
-#~ msgid "tourisme"
-#~ msgstr "tourismus"
-
-#~ msgid "informatique et multimédia"
-#~ msgstr "computer"
-
-#~ msgid "musique"
-#~ msgstr "musik"
-
-#~ msgid "cinéma"
-#~ msgstr "kino"
-
-#~ msgid "psychologie"
-#~ msgstr "psychologie"
-
-#~ msgid "récits"
-#~ msgstr "geschichten"
-
-#~ msgid "arts"
-#~ msgstr "kunst"
-
-#~ msgid "Un humain"
-#~ msgstr "ein Mensch"
-
-#~ msgid "Ni vieux ni jeune"
-#~ msgstr "nicht alt nicht jung"
