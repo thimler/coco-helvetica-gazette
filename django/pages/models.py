@@ -2,6 +2,7 @@ from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from .tags import ALLOWED_TAGS
 from django.urls import reverse
+from binascii import crc32
 
 
 GENDERS = [
@@ -32,3 +33,8 @@ class TextTestimonial(models.Model):
 
     def get_absolute_url(self):
         return reverse("article", kwargs={"pk": self.pk})
+
+    def color(self):
+        colors = [""] * 2 + ["bg-color-" + s for s in ["orange", "salmon", "blue"]]
+        idx = crc32(self.text.encode()) % len(colors)
+        return colors[idx]
