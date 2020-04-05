@@ -43,120 +43,112 @@ msgid "Femme"
 msgstr "Frau"
 
 #: pages/tags.py:4
-msgid "personnel santé"
-msgstr ""
+msgid "Personnel Santé"
+msgstr "Gesundheitpersonal"
 
 #: pages/tags.py:5
-msgid "alimentaire"
-msgstr "lebensmittel"
+msgid "Alimentaire"
+msgstr "Lebensmittel"
 
 #: pages/tags.py:6
 #, fuzzy
-#| msgid "education"
-msgid "éducation"
-msgstr "bildung"
+#| msgid "Education"
+msgid "Education"
+msgstr "Bildung"
 
 #: pages/tags.py:7
-msgid "télétravail"
-msgstr "telearbeit"
+msgid "Télétravail"
+msgstr "Telearbeit"
 
 #: pages/tags.py:8
 #, fuzzy
-#| msgid "sécurité et droit"
-msgid "sécurité"
-msgstr "sicherheit"
+#| msgid "Sécurité"
+msgid "Sécurité"
+msgstr "Sicherheit"
 
 #: pages/tags.py:9
-msgid "transport"
-msgstr "verkehr"
+msgid "Transport"
+msgstr "Verkehr"
 
 #: pages/tags.py:10
-msgid "étudiant"
-msgstr ""
+msgid "Etudiant"
+msgstr "Student"
 
 #: pages/tags.py:11
-msgid "sport"
-msgstr "sport"
+msgid "Sport"
+msgstr "Sport"
 
 #: pages/tags.py:12
-msgid "voyage"
-msgstr "reisen"
+msgid "Voyage"
+msgstr "Reise"
 
 #: pages/tags.py:13
 #, fuzzy
-#| msgid "culture"
-msgid "art & culture"
-msgstr "kultur"
+#| msgid "Culture"
+msgid "Art & Culture"
+msgstr "Kunst & Kultur"
 
 #: pages/tags.py:14
-msgid "cuisine"
-msgstr "küche"
+msgid "Cuisine"
+msgstr "Kochen"
 
 #: pages/tags.py:15
-msgid "nature & environnement"
-msgstr "natur & umwelt"
+msgid "Nature & Environnement"
+msgstr "Natur & Umwelt"
 
 #: pages/tags.py:16
-msgid "famille"
-msgstr ""
+msgid "Famille"
+msgstr "Familie"
 
 #: pages/tags.py:17
-msgid "amitié"
-msgstr ""
+msgid "Amitié"
+msgstr "Freundshaft"
 
 #: pages/tags.py:18
 #, fuzzy
-#| msgid "humour"
-msgid "amour"
-msgstr "humor"
+#| msgid "Amour"
+msgid "Amour"
+msgstr "Liebe"
 
 #: pages/tags.py:19
-msgid "solitude"
-msgstr ""
+msgid "Confinement"
+msgstr "Einsperrung"
 
 #: pages/tags.py:20
-msgid "confinement"
-msgstr ""
+msgid "Motivation"
+msgstr "Motivation"
 
 #: pages/tags.py:21
-msgid "positivité"
-msgstr "positivität"
+msgid "Humour"
+msgstr "Humor"
 
 #: pages/tags.py:22
-msgid "motivation"
-msgstr "motivation"
+msgid "Actualités"
+msgstr "Nachrichten"
 
 #: pages/tags.py:23
-msgid "humour"
-msgstr "humor"
-
-#: pages/tags.py:24
-msgid "actualités"
-msgstr ""
-
-#: pages/tags.py:25
-msgid "covid+"
-msgstr ""
+msgid "Covid+"
+msgstr "Covid+"
 
 #: templates/pages/home.html:65
 msgid "Moi, pendant le confinement..."
-msgstr ""
+msgstr "Ich, während der Sperrung..."
 
 #: templates/pages/home.html:71
 msgid "J'écris la gazette!"
-msgstr ""
+msgstr "Ich schreibe die Gazette!"
 
 #: templates/pages/home.html:74
 msgid "Je suis..."
-msgstr ""
+msgstr "Ich bin..."
 
 #: templates/pages/home.html:83
 msgid "Mon âge:"
-msgstr ""
+msgstr "Mein Alter"
 
 #: templates/pages/home.html:86
 msgid "J'envoie!"
-msgstr ""
+msgstr "Ich sende!"
 
 #~ msgid "santé"
 #~ msgstr "gesundheit"
