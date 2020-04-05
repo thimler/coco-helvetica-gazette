@@ -47,7 +47,7 @@ msgid "Personnel Santé"
 msgstr "Gesundheitpersonal"
 
 #: pages/tags.py:5
-msgid "Alimentaire"
+msgid "Secteur Alimentaire"
 msgstr "Lebensmittel"
 
 #: pages/tags.py:6
@@ -119,8 +119,8 @@ msgid "Actualités"
 msgstr "Nachrichten"
 
 #: pages/tags.py:23
-msgid "CovidPositif"
-msgstr "CovidPositiv"
+msgid "Covid Positif"
+msgstr "Covid Positiv"
 
 #: templates/pages/home.html:65
 msgid "Moi, pendant le confinement..."
