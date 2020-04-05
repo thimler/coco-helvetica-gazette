@@ -1,15 +1,19 @@
 from django.shortcuts import get_object_or_404
 from django.views.generic import ListView, DetailView
 from .models import TextTestimonial, Tag
+from django.forms import modelform_factory
 
 
 class HomePageView(ListView):
     template_name = "pages/home.html"
     model = TextTestimonial
+    fields = ("text", "tags", "author_age", "author_gender")
+    ArticleCreate = modelform_factory(TextTestimonial, fields=fields)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["tags"] = Tag.objects.all()
+        context["ArticleCreate"] = self.ArticleCreate
         return context
 
 
@@ -27,3 +31,4 @@ class ByTagView(ListView):
 
     def get_queryset(self):
         return TextTestimonial.objects.filter(tags__pk=self.kwargs["pk"])
+

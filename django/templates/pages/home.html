@@ -50,7 +50,24 @@
                 </div>
             </div>
         {% endfor %}
+
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text">New Entry</p>
+                    <p class="card-text">
+                        <small class="text-muted">
+                            <form action="" method="post">
+                                {% csrf_token %}
+                                {{ ArticleCreate }}
+                                <input type="submit" value="Submit">
+                            </form>
+                        </small>
+                    </p>
+                    </p>
+                </div>
+            </div>
     </div>
+
 
 
 {% endblock %}
