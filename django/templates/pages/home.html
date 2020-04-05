@@ -54,13 +54,29 @@
 
             <div class="card">
                 <div class="card-body">
-                    <p class="card-text">New Entry</p>
+                    <p class="card-text">{% trans "Moi, pendant la quarantaine..." %}</p>
                     <p class="card-text">
                         <small class="text-muted">
                             <form action="{% url 'article-add' %}" method="post">
                                 {% csrf_token %}
-                                {{ ArticleCreate }}
-                                <input type="submit" value="Submit">
+                                <div class="form-group">
+                                    <label for="id_author_gender">{% trans "Je suis..." %}</label>
+                                    <select class="form-control" id="id_author_gender" name="author_gender">
+                                        {% for k,v in ArticleCreate.author_gender.field.choices|slice:"1:" %}
+                                            <option value="{{ k }}">{{ v }}</option>
+                                            {{ k }}
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="id_age">{% trans "Mon âge:" %}</label>
+                                    <input name="author_age" type="number" min="0" class="form-control" id="id_age">
+                                  </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="id_text" rows="3" name="text" placeholder="{% trans "J'écrit la gazette!" %}"></textarea>
+                                </div>
+                                <input type="submit" value="{% trans "J'envoie!" %}">
+                            </form>
                             </form>
                         </small>
                     </p>

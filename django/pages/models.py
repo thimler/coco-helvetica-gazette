@@ -5,9 +5,9 @@ from django.urls import reverse
 
 
 GENDERS = [
+    ("O", _("Autre")),
     ("M", _("Homme")),
     ("F", _("Femme")),
-    ("O", _("Autre")),
 ]
 
 
@@ -24,7 +24,7 @@ class TextTestimonial(models.Model):
     tags = models.ManyToManyField(Tag)
     author_age = models.IntegerField(blank=True, null=True)
     author_gender = models.CharField(
-        max_length=1, choices=GENDERS, null=True, blank=True
+        max_length=1, choices=GENDERS, null=True, blank=True, default="O"
     )
 
     def __str__(self):

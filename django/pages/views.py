@@ -1,19 +1,21 @@
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, render, redirect
 from django.views.generic import ListView, DetailView
 from .models import TextTestimonial, Tag
 from django.forms import modelform_factory
 
+ArticleCreate = modelform_factory(TextTestimonial, fields=[
+    "text", "author_gender", "author_age"
+    ])
 
 class HomePageView(ListView):
     template_name = "pages/home.html"
     model = TextTestimonial
     fields = ("text",)
-    ArticleCreate = modelform_factory(TextTestimonial, fields=fields)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context["tags"] = Tag.objects.all()
-        context["ArticleCreate"] = self.ArticleCreate
+        context["ArticleCreate"] = ArticleCreate
         return context
 
 
@@ -34,11 +36,7 @@ class ByTagView(ListView):
 
 
 def manage_articles(request):
-    fields = ("text",)
-    ArticleCreate = modelform_factory(TextTestimonial, fields=fields)
     if request.method == "POST":
         form = ArticleCreate(request.POST, request.FILES)
         form.save()
-    else:
-        form = ArticleCreate()
-    return render(request, "pages/home.html")
+    return redirect("home")
