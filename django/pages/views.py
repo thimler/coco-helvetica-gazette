@@ -25,6 +25,7 @@ class HomePageView(ListView):
         else:
             return self.model.objects.filter(creation_date=filter_val)
 
+
 class ArticleView(DetailView):
     model = TextTestimonial
 
