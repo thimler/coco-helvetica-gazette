@@ -17,9 +17,9 @@
                     <div class="input-group-prepend">
                         <div class="input-group-text">#</div>
                     </div>
-                    <select class="form-control">
+                    <select class="form-control" onChange="window.location.href=this.value">
                         {% for tag in tags %}
-                            <option value="{{ tag.id }}">{{ tag }}</option>
+                            <option value="{% url 'by_tag' tag.id %}">{{ tag }}</option>
                         {% endfor %}
                     </select>
                 </div>
