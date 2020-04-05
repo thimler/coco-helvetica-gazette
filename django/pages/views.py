@@ -1,4 +1,4 @@
-from django.shortcuts import get_object_or_404, render, redirect
+from django.shortcuts import get_object_or_404, redirect
 from django.views.generic import ListView, DetailView
 from .models import TextTestimonial, Tag
 from django.forms import modelform_factory
@@ -11,7 +11,6 @@ ArticleCreate = modelform_factory(
 class HomePageView(ListView):
     template_name = "pages/home.html"
     model = TextTestimonial
-    fields = ("text",)
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
