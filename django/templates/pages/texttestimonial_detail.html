@@ -3,11 +3,17 @@
 {% block title %}{{ block.super }} - {{ object }}{% endblock %}
 
 {% block content %}
+
+<div class="container">
+<h1 class="mt-5">Une histoire personnelle</h1>
+<p class="lead">
 {{ object.text }}
         {% for tag in object.tags.all %}
             <b><a href="{% url 'by_tag' tag.id %}">#{{ tag.name }}</a> </b>
         {% endfor %}
         -- {{ object.creation_date }}, {{ object.get_author_gender_display|default:"Un humain" }},
         {{ object.author_age|default:"Ni vieux ni jeune" }}
-{% endblock %}
+</p>
 
+<a href='{% url "home" %}'><h3 class="mt-5">retour</h3></a>
+{% endblock %}
